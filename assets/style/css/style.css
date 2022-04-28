@@ -1,3 +1,49 @@
+
 body{
-    background-color: #e80000;
+    width: 100vw;
+    height: 100vh;
+    background: #CD0DEC;
 }
+
+h1{
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+#back {
+    position: relative;
+    background: #CD0DEC;
+    #filter: blur(60px)
+}
+
+svg{
+    
+    #animation: kaboom 15s ease alternate infinite;
+}
+.spinner {
+    #animation: spin 50s linear infinite;
+}
+
+
+@keyframes spin {
+   from {transform:rotate(0deg);}
+   to {transform:rotate(359deg);}
+}
+
+@keyframes kaboom {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+
+
+
+
+
+
