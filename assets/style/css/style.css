@@ -30,7 +30,7 @@ body {
 #text {
     position: fixed;
     right: 50%;
-    font-size: 3em;
+    font-size: 2em;
     color: #fff;
     text-align: center;
     transform: translateX(50%);
