@@ -1,49 +1,79 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
 
-body{
+body {
     width: 100vw;
     height: 100vh;
     background: #CD0DEC;
 }
 
-h1{
+.legal {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.214);
+    border-radius: 10px;
+}
+
+.legal p {
+    margin: 0;
+    padding: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+#text {
+    position: fixed;
+    right: 50%;
     font-size: 3em;
     color: #fff;
     text-align: center;
+    transform: translateX(50%);
+    text-shadow: 7px 5px 15px #000;
+    z-index: 1;
     margin-top: 10vh;
+
+    font-family: 'Inter', sans-serif;
 }
 
 #back {
+    z-index: -2;
     position: relative;
     background: #CD0DEC;
-    #filter: blur(60px)
+    filter: blur(60px)
 }
 
-svg{
-    
-    #animation: kaboom 15s ease alternate infinite;
+svg {
+
+    animation: kaboom 15s ease alternate infinite;
 }
+
 .spinner {
-    #animation: spin 50s linear infinite;
+    animation: spin 50s linear infinite;
 }
 
 
 @keyframes spin {
-   from {transform:rotate(0deg);}
-   to {transform:rotate(359deg);}
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
 }
 
 @keyframes kaboom {
-  0% {
-    transform: scale(0.8);
-  }
+    0% {
+        transform: scale(0.8);
+    }
+
   100% {
     transform: scale(1.3);
   }
 }
-
-
-
-
-
-
-
