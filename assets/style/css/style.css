@@ -15,16 +15,30 @@ body {
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 300px;
     background-color: rgba(255, 255, 255, 0.214);
     border-radius: 10px;
+    margin: 10px;
 }
 
 .legal p {
     margin: 0;
-    padding: 10px;
+    padding: 0.7rem;
+    padding-right: 0.3rem;
     font-size: 12px;
     color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.266);
+    border-radius: 8px;
+    padding: 8px;
+    margin: 0;
+    transition: all .8s ease;
+}
+a:hover{
+    font-size: large;
+    transition: all .4s ease;
 }
 
 #text {
@@ -36,27 +50,62 @@ body {
     transform: translateX(50%);
     text-shadow: 7px 5px 15px #000;
     z-index: 1;
-    margin-top: 10vh;
+    margin-top: 15vh;
+    transition: all 2s ease;
 
     font-family: 'Inter', sans-serif;
+}
+#text h1,h3{
+    transition: all .4s ease;
+    padding: 7vh;
+}
+
+#text h1:hover{
+    font-size: 2.5em;
+    transition: all .4s ease;
+}
+#text h3:hover{
+    font-size: 0.5em;
+    transition: all .4s ease;
 }
 
 #back {
     z-index: -2;
     position: relative;
     background: #CD0DEC;
+    animation: kaboom 15s ease alternate infinite;
     filter: blur(60px)
 }
 
-svg {
 
-    animation: kaboom 15s ease alternate infinite;
-}
 
 .spinner {
     animation: spin 50s linear infinite;
+    animation-iteration-count: 1;
 }
 
+path{
+    stroke: rgb(0, 0, 0);
+    stroke-width: 20px;
+    stroke-linecap: round;
+    animation: cameleon 10s ease infinite;
+    animation-iteration-count: 3;
+    
+}
+
+@keyframes cameleon {
+    0% {
+        stroke: #000000;
+    }
+    33% {
+        stroke: #FFFFFF;
+    }
+    66% {
+        stroke: #CD0DEC;
+    }
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
 
 @keyframes spin {
     from {
